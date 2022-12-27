@@ -18,12 +18,12 @@ const nav = document.querySelector(".nav"),
         const a = navList[i].querySelector("a");
         a.addEventListener("click", function(){
    
-            /* removeBackSection(); */
+            
             for(let j=0; j<totalNavList; j++){
                 
                 if(navList[j].querySelector("a").classList.contains("active")) {
 
-                    /* addBackSection(); */
+                    
                     allSection[j].classList.add("back-section");
                 }
                 
@@ -39,18 +39,6 @@ const nav = document.querySelector(".nav"),
             }
         })        
     }
-   /*  function removeBackSection() {
-
-        for(let i=0; i<totalSection; i++) {
-            
-            allSection[i].classList.remove("back-section");
-        }
-
-    } */
- /*    function addBackSection(num) {
-
-        allSection[num].classList.add("back-section");
-    } */
 
     function showSection(element) {
 
@@ -78,8 +66,7 @@ const nav = document.querySelector(".nav"),
         const sectionIndex = this.getAttribute("data-section-index");
         showSection(this);
         updateNow(this);
-        /* removeBackSection();
-        addBackSection(sectionIndex); */
+        
     })
     const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
